@@ -5,8 +5,8 @@ function Movie(props) {
   const change = () => {
     let txt = document.querySelector(".title").textContent;
     console.log(txt);
-  }
-
+  } 
+  
   return (
     <div className="movie">
       <ul>

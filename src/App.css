@@ -1,11 +1,43 @@
-*{padding:0;margin: 0;}
-html,body{margin: 0 auto;font-size: 16px;}
-a{text-decoration: none;color: inherit;}
-ul,ol{list-style: none;}
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  margin: 0 auto;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
 
-.flex_comp{display: flex;justify-content: space-around;}
-.App{background: url(./images/background2.jpg)center;height: 1000px;}
-.App > h1{text-align: center;padding:20px 20px;color: rgb(0, 0, 0);}
-.flex_comp {}
-.flex_comp > li{border: 10px solid #ffffff;padding: 20px 30px;background: #ffffff4e;display: flex;justify-content: space-around;width: 100%;}
-.flex_comp > li > .movie{}
+.flex_comp {
+  display: flex;
+  justify-content: space-around;
+}
+.App {
+  background: url(./images/background2.jpg) center;
+  height: 1000px;
+}
+.App > h1 {
+  text-align: center;
+  padding: 20px 20px;
+  color: rgb(0, 0, 0);
+}
+.flex_comp {
+}
+.flex_comp > li {
+  border: 10px solid #ffffff;
+  padding: 20px 30px;
+  background: #ffffff4e;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.flex_comp > li > .movie {
+}

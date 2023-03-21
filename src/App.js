@@ -1,6 +1,7 @@
 import "./App.css";
 import { Component } from "react";
 import Movie from "./components/Movie.js";
+import InputComp from "./components/InputComp.js";
 import poster1 from "./images/poster1.jpg";
 import poster2 from "./images/poster2.jpg";
 import poster3 from "./images/poster3.jpg";
@@ -30,16 +31,31 @@ class App extends Component {
       ],
     };
   }
+  addPersonInfo = (name, rating, date) => {
+    alert("추가");
+    alert("넘어온이름:" + name);
+    alert("넘어온평점:" + rating);
+    alert("날짜:" + date);
+    const movieObj = { name: name, rating: rating, date: date };
+    const concatedList = this.state.movieList.concat(movieObj);
+    this.setState({
+      movieList: concatedList
+    });
+  };
 
   render() {
-    const test = this.state.movieList.map((data,index) => <Movie
-      key = {index}
-      index = {index}
-      image={data.image}
-      name={data.name}
-      rating={data.rating}
-      date={data.date}
-    />);
+    const test = this.state.movieList.map((data, index) => (
+      <Movie
+        key={index}
+        //에러뜰때용, component의 번호를 구분 짓는 것
+        index={index}
+        //몇번째 배열인지 알려주는 것
+        image={data.image}
+        name={data.name}
+        rating={data.rating}
+        date={data.date}
+      />
+    ));
 
     return (
       <div className="App">
@@ -72,6 +88,8 @@ class App extends Component {
         /> */}
           </li>
         </ul>
+        {/* <InputComp/> */}
+        <InputComp addPersonInfo={this.addPersonInfo} />
       </div>
     );
   }
