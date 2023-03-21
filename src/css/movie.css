@@ -1,0 +1,17 @@
+@charset "urf-8";
+
+@font-face {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.movie img{
+  width: 300px;
+}
+.movie ul > li+li{margin-top:10px;}
+.movie ul > .title{font-family: 'GangwonEduPowerExtraBoldA';font-size: 24px;color: rgb(33, 33, 33);}
+.movie ul > li:nth-child(3){ font-family: 'Noto Sans KR', sans-serif;font-size: 18px;}
+.movie ul > li:nth-child(4){ font-family: 'Noto Sans KR', sans-serif;font-size: 18px;}
+.movie h1{text-align: center;padding-top: 20px;}
